@@ -365,7 +365,7 @@ position: 0,
         {key: "g", description: "G: Reset for Gu points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
 
-    layerShown() { return hasAchievement('a',22) },          // Returns a bool for if this layer's node should be visible in the tree.
+    layerShown() { return hasAchievement('a',25) },          // Returns a bool for if this layer's node should be visible in the tree.
 
     upgrades: {
         11:{
@@ -716,10 +716,7 @@ addLayer("a", {
        45: {
             name: "The true ENDgame",
             done() { return player.gm.points.gte(10) },
-            tooltip(){return this.done()?'Write ALL the CAPITAL letters of the NAME of achievements, sort them from A to Z. This is the answer.'
-            :"Complete 10 games.<br>Reward: Get the answer.";},
-            onComplete(){str='Write ALL the CAPITAL letters of the NAME of achievements, sort them from A to Z. This is the answer.'
-            alert(str);console.log(str);}
+            tooltip: "Complete 10 games.<br>Reward: Beat the game.",
         },
     },
     tabFormat: [

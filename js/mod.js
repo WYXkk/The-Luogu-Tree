@@ -23,7 +23,7 @@ let changelog = `<h1>Changelog:</h1><br>
 	<h3>v1.0</h3><br>
 		- Added things.<br>`
 
-let winText = `Congratulations! You have reached the end and beaten this game.<br>Click 'Keep Going' and see the final Achievement to get the answer.`
+let winText = `Congratulations! You have reached the end and beaten this game.`
 
 // If you add new functions anywhere inside of a layer, and those functions have an effect when called, add them here.
 // (The ones here are examples, all official functions are already taken care of)
@@ -64,7 +64,8 @@ function addedPlayerData() { return {
 }}
 
 // Display extra things at the top of the page
-var displayThings = [
+var displayThings = ['This tree was made for the April Fool contest of Luogu,',
+'a website for studying Olympiad in Informatics.'
 ]
 
 // Determines when the game "ends"
