@@ -668,7 +668,7 @@ addLayer("a", {
         },
         31: {
             name: "Back to the beginning AGAIN",
-            done() { return player.g.points.gte(1)||player.pc.points.gte(1)||player.d.points.gte(1) },
+            done() { return player.g.unlocked||player.pc.unlocked||player.d.unlocked },
             tooltip: "Perform a G or PC or D reset.<br>Reward: R and C always behaves as they are unlocked first.",
         },
         32: {
@@ -683,7 +683,7 @@ addLayer("a", {
         },
         34: {
             name: "I have all!",
-            done() { return player.g.points.gte(1)&&player.pc.points.gte(1)&&player.d.points.gte(1) },
+            done() { return player.g.unlocked&&player.pc.unlocked&&player.d.unlocked },
             tooltip: "Unlock G, PC and D.<br>Reward: They all behave as unlocked first,and unlock the keys.",
         },
         35: {
